@@ -16,5 +16,7 @@ namespace SistemaGestionVeterinaria.Forms
         {
             InitializeComponent();
         }
+
+      
     }
 }
