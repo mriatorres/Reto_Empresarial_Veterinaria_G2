@@ -59,5 +59,25 @@ namespace SistemaGestionVeterinaria.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_80 {
+            get {
+                object obj = ResourceManager.GetObject("Group 80", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Pets_Vets {
+            get {
+                object obj = ResourceManager.GetObject("Pets&Vets", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

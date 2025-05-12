@@ -69,6 +69,9 @@
     <Compile Include="Forms\Forms Veterinario\DashBoardVeterinario.Designer.cs">
       <DependentUpon>DashBoardVeterinario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Forms Veterinario\RoundedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Forms Veterinario\DashBoardVeterinario.resx">
@@ -99,6 +102,23 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Modelos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Forms\Iconos Veterinaria\Back.png" />
+    <Content Include="Forms\Iconos Veterinaria\Checkmark.png" />
+    <Content Include="Forms\Iconos Veterinaria\ComputerIcon.png" />
+    <Content Include="Forms\Iconos Veterinaria\DoctorIcon.png" />
+    <Content Include="Forms\Iconos Veterinaria\High Importance.png" />
+    <Content Include="Forms\Iconos Veterinaria\Location.png" />
+    <Content Include="Forms\Iconos Veterinaria\Logo.png" />
+    <Content Include="Forms\Iconos Veterinaria\Logout Rounded Left.png" />
+    <Content Include="Forms\Iconos Veterinaria\PawIcon.png" />
+    <Content Include="Forms\Iconos Veterinaria\Pets&amp;Vets.png" />
+    <Content Include="Forms\Iconos Veterinaria\Puzzled.png" />
+    <Content Include="Forms\Iconos Veterinaria\SearchBtn.png" />
+    <Content Include="Forms\Iconos Veterinaria\Siren.png" />
+    <None Include="Resources\Group 80.png" />
+    <None Include="Resources\Pets&amp;Vets.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
