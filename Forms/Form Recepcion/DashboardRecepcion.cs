@@ -39,6 +39,12 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Recepcion
 
             // Botón para agendar citas y cirugías
             Button btnAgendar = CreateHoverButton("Agendar citas y cirugías", 190);
+            // Evento para abrir el formulario AgendarCitasyCirugias
+            btnAgendar.Click += (s, e) =>
+            {
+                AgendarCitasyCirugias agendarForm = new AgendarCitasyCirugias();
+                agendarForm.ShowDialog();
+            };
             contentPanel.Controls.Add(btnAgendar);
         }
 
@@ -56,10 +62,11 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Recepcion
             button.Location = new Point((contentPanel.Width - button.Width) / 2, yPos);
 
             // Efecto de hover
-            button.MouseEnter += (s, e) => button.BackColor = Color.FromArgb(30, 144, 255); // Color al pasar el mouse
-            button.MouseLeave += (s, e) => button.BackColor = Color.FromArgb(23, 124, 116); // Color normal
+            button.MouseEnter += (s, e) => button.BackColor = Color.FromArgb(30, 144, 255);
+            button.MouseLeave += (s, e) => button.BackColor = Color.FromArgb(23, 124, 116);
 
             return button;
         }
     }
 }
+

@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Form Recepcion\AgendarCitasyCirugias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form Recepcion\ConsultarDisponibilidadConsultorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Form Recepcion\DashboardRecepcion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,12 @@
     <Compile Include="Forms\Form Recepcion\RegistrarCliente.cs" />
     <Compile Include="Forms\Form Recepcion\RegistrarMascota.cs" />
     <Compile Include="Forms\Form Recepcion\RegistrarOtraMascota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form Recepcion\VerAgendaConsultorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form Recepcion\VerAgendaQuirofanos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Forms Veterinario\DashBoardVeterinario.cs">
@@ -73,6 +85,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Forms Veterinario\DashBoardVeterinario.resx">
       <DependentUpon>DashBoardVeterinario.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
