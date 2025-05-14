@@ -21,7 +21,7 @@ namespace SistemaGestionVeterinaria.Forms
             InitializeComponent();
             InitializeRoundedButton();
             //InitializeRoundedPanel();
-            panel10.Paint += panel10_Paint; // Subscribe to the Paint event
+            panel10.Paint += panel10_Paint; // Subscribe to the Paint event of panel10
 
         }
 
@@ -60,7 +60,7 @@ namespace SistemaGestionVeterinaria.Forms
         }
         private void RoundedButton_Click(object sender, EventArgs e)
         {
-            DashboardVeterinario dashboardVeterinario = new DashboardVeterinario();
+            PantallaLogin dashboardVeterinario = new PantallaLogin();
             dashboardVeterinario.Show();
             this.Hide();
             dashboardVeterinario.FormClosed += (s, args) => this.Show();
@@ -73,9 +73,9 @@ namespace SistemaGestionVeterinaria.Forms
             using (Pen pen = new Pen(ColorTranslator.FromHtml("#0E7C82"), 2)) // 2 is the width of the line
             {
                 // Calculate the middle of the panel
-                int middleY = panel10.Height / 2;
-                // Draw the line across the middle of the panel
-                e.Graphics.DrawLine(pen, 0, middleY, panel10.Width, middleY);
+                int middleY = panel10.Height / 2; // Use panel10's height to find the middle
+                                                  // Draw the line across the middle of the panel
+                e.Graphics.DrawLine(pen, 0, middleY, panel10.Width, middleY); // Use panel10's width
             }
         }
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -120,6 +120,11 @@ namespace SistemaGestionVeterinaria.Forms
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click_2(object sender, EventArgs e)
         {
 
         }

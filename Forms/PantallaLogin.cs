@@ -11,9 +11,8 @@ using SistemaGestionVeterinaria.Forms.Forms_Recepcion;
 
 namespace SistemaGestionVeterinaria.Forms.Forms_Veterinario
 {
-    public partial class DashboardVeterinario : Form
+    public partial class PantallaLogin : Form
     {
-        
         // User class to hold credentials and role
         private class User
         {
@@ -31,11 +30,29 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Veterinario
         // List to hold sample credentials
         private List<User> users = new List<User>();
 
-        public DashboardVeterinario()
+        // Declare emailTxt and pwdTxt as class-level fields
+       /* private RoundedTextBox emailTxt;
+        private RoundedTextBox pwdTxt;*/
+
+        public PantallaLogin()
         {
             InitializeComponent();
             LoadSampleUsers();
+           // InitializeCustomTextBoxes();
         }
+
+       /* private void InitializeCustomTextBoxes()
+        {
+            emailTxt = new RoundedTextBox();
+            emailTxt.BorderRadius = 20; // Set the desired border radius
+            emailTxt.Location = new Point(136, 84); // Set the desired location
+            emailTxt.Size = new Size(966, 28); // Set the desired size
+
+            pwdTxt = new RoundedTextBox();
+            pwdTxt.BorderRadius = 20; // Set the desired border radius
+            pwdTxt.Location = new Point(136, 58); // Set the desired location
+            pwdTxt.Size = new Size(966, 28); // Set the desired size
+        }*/
 
         // Load sample users into the list
         private void LoadSampleUsers()
@@ -54,41 +71,34 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Veterinario
             string enteredEmail = emailTxt.Text.Trim();
             string enteredPassword = pwdTxt.Text.Trim();
 
-            User matchedUser = users.Find(u => 
-                u.Email.Equals(enteredEmail, StringComparison.OrdinalIgnoreCase) && 
+            User matchedUser = users.Find(u =>
+                u.Email.Equals(enteredEmail, StringComparison.OrdinalIgnoreCase) &&
                 u.Password == enteredPassword);
 
             if (matchedUser != null)
             {
+                Form dashboardForm = null;
                 switch (matchedUser.Role.ToLower())
                 {
-                   /* case "admin":
-                        AdminMenuForm adminMenu = new AdminMenuForm();
-                        adminMenu.Show();
-                        this.Hide();
-                        break;*/
                     case "receptionist":
-                        DashboardRecepcion dashboardRecepcion = new DashboardRecepcion();
-                        dashboardRecepcion.Show();
-                        this.Hide();
-                        //dashboardRecepcion.FormClosed += (s, args) => this.Show();
-
+                        dashboardForm = new DashboardRecepcion();
                         break;
                     case "veterinary":
-                        DashboardVeterinario dashboardVeterinario = new DashboardVeterinario();
-                        dashboardVeterinario.Show();
-                        this.Hide();
-                        //dashboardVeterinario.FormClosed += (s, args) => this.Show();
-
+                        dashboardForm = new PantallaLogin();
                         break;
                     default:
                         MessageBox.Show("No se reconoce el rol del usuario.", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        break;
+                        return; // Exit the method if the role is not recognized
                 }
+                // Show the dashboard form and hide the current form
+                dashboardForm.Show();
+                this.Hide();
+                // Handle the FormClosed event to show the login form again
+                dashboardForm.FormClosed += (s, args) => this.Show();
             }
             else
             {
-                MessageBox.Show("Invalid email or password. Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Correo o contraseña invalidos. Por favor vuelva aingresar las credenciales.", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -102,15 +112,30 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Veterinario
 
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
+        }
+
+        private void roundedTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roundedTextBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
 
         }
     }
-
-   
 }
-
