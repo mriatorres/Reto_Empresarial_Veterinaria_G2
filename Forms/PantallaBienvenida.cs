@@ -60,7 +60,11 @@ namespace SistemaGestionVeterinaria.Forms
         }
         private void RoundedButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Rounded button clicked!");
+            DashboardVeterinario dashboardVeterinario = new DashboardVeterinario();
+            dashboardVeterinario.Show();
+            this.Hide();
+            dashboardVeterinario.FormClosed += (s, args) => this.Show();
+
         }
 
         private void panel10_Paint(object sender, PaintEventArgs e)
@@ -115,6 +119,9 @@ namespace SistemaGestionVeterinaria.Forms
 
         }
 
-       
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

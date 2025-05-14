@@ -69,20 +69,36 @@
     <Compile Include="Forms\Form Recepcion\RegistrarOtraMascota.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Forms Veterinario\DashboardVeterinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Forms Veterinario\DashboardVeterinario.Designer.cs">
+      <DependentUpon>DashboardVeterinario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\PantallaBienvenida.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\PantallaBienvenida.Designer.cs">
       <DependentUpon>PantallaBienvenida.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Forms Veterinario\RoundedButton.cs">
+    <Compile Include="Forms\RoundedButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Forms\RoundedPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Modelos\Administrador\Administrador.cs" />
+    <Compile Include="Modelos\Recepcion\Cliente.cs" />
+    <Compile Include="Modelos\Recepcion\Mascota.cs" />
+    <Compile Include="Modelos\Recepcion\Persona.cs" />
+    <Compile Include="Modelos\Recepcion\Recepcion.cs" />
+    <Compile Include="Modelos\Veterinario\HistorialMedico.cs" />
+    <Compile Include="Modelos\Veterinario\PersonalVeterinario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Forms Veterinario\DashboardVeterinario.resx">
+      <DependentUpon>DashboardVeterinario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\PantallaBienvenida.resx">
       <DependentUpon>PantallaBienvenida.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,9 +125,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Modelos\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Forms\Iconos Veterinaria\Back.png" />
     <Content Include="Forms\Iconos Veterinaria\Checkmark.png" />
@@ -126,6 +140,8 @@
     <Content Include="Forms\Iconos Veterinaria\Puzzled.png" />
     <Content Include="Forms\Iconos Veterinaria\SearchBtn.png" />
     <Content Include="Forms\Iconos Veterinaria\Siren.png" />
+    <None Include="Resources\Logout Rounded Left1.png" />
+    <None Include="Resources\Back1.png" />
     <None Include="Resources\Group 80.png" />
     <None Include="Resources\Pets&amp;Vets.png" />
   </ItemGroup>
