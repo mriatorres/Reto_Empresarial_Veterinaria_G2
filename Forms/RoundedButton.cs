@@ -11,11 +11,10 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Veterinario
 {
     public class RoundedButton : Button
     {
-            
         protected override void OnPaint(PaintEventArgs pevent)
         {
             base.OnPaint(pevent);
-            int cornerRadius = this.Height / 2;
+            int cornerRadius = 20; // Fixed corner radius
             GraphicsPath path = new GraphicsPath();
             // Create a rounded rectangle path (pill shape)
             path.StartFigure();

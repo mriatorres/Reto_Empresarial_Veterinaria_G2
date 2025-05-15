@@ -58,21 +58,30 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form Recepcion\DashboardRecepcion.cs">
+    <Compile Include="Forms\FormRecepcion\DashboardRecepcion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form Recepcion\FormBaseRec.cs">
+    <Compile Include="Forms\FormRecepcion\FormBaseRec.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form Recepcion\RegistrarCliente.cs" />
-    <Compile Include="Forms\Form Recepcion\RegistrarMascota.cs" />
-    <Compile Include="Forms\Form Recepcion\RegistrarOtraMascota.cs">
+    <Compile Include="Forms\FormRecepcion\RegistrarCliente.cs" />
+    <Compile Include="Forms\FormRecepcion\RegistrarMascota.cs" />
+    <Compile Include="Forms\FormRecepcion\RegistrarOtraMascota.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Forms Veterinario\PantallaLogin.cs">
+    <Compile Include="Forms\ConfirmDialogLogout.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Forms Veterinario\PantallaLogin.Designer.cs">
+    <Compile Include="Forms\FormsVeterinario\DashboardVeterinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsVeterinario\DashboardVeterinario.Designer.cs">
+      <DependentUpon>DashboardVeterinario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PantallaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PantallaLogin.Designer.cs">
       <DependentUpon>PantallaLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PantallaBienvenida.cs">
@@ -102,7 +111,10 @@
     <Compile Include="Modelos\Veterinario\PersonalVeterinario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Forms Veterinario\PantallaLogin.resx">
+    <EmbeddedResource Include="Forms\FormsVeterinario\DashboardVeterinario.resx">
+      <DependentUpon>DashboardVeterinario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PantallaLogin.resx">
       <DependentUpon>PantallaLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PantallaBienvenida.resx">
@@ -133,19 +145,20 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Forms\Iconos Veterinaria\Back.png" />
-    <Content Include="Forms\Iconos Veterinaria\Checkmark.png" />
-    <Content Include="Forms\Iconos Veterinaria\ComputerIcon.png" />
-    <Content Include="Forms\Iconos Veterinaria\DoctorIcon.png" />
-    <Content Include="Forms\Iconos Veterinaria\High Importance.png" />
-    <Content Include="Forms\Iconos Veterinaria\Location.png" />
-    <Content Include="Forms\Iconos Veterinaria\Logo.png" />
-    <Content Include="Forms\Iconos Veterinaria\Logout Rounded Left.png" />
-    <Content Include="Forms\Iconos Veterinaria\PawIcon.png" />
-    <Content Include="Forms\Iconos Veterinaria\Pets&amp;Vets.png" />
-    <Content Include="Forms\Iconos Veterinaria\Puzzled.png" />
-    <Content Include="Forms\Iconos Veterinaria\SearchBtn.png" />
-    <Content Include="Forms\Iconos Veterinaria\Siren.png" />
+    <Content Include="Forms\IconosVeterinaria\Back.png" />
+    <Content Include="Forms\IconosVeterinaria\Checkmark.png" />
+    <Content Include="Forms\IconosVeterinaria\ComputerIcon.png" />
+    <Content Include="Forms\IconosVeterinaria\DoctorIcon.png" />
+    <Content Include="Forms\IconosVeterinaria\High Importance.png" />
+    <Content Include="Forms\IconosVeterinaria\Location.png" />
+    <Content Include="Forms\IconosVeterinaria\Logo.png" />
+    <Content Include="Forms\IconosVeterinaria\Logout Rounded Left.png" />
+    <Content Include="Forms\IconosVeterinaria\PawIcon.png" />
+    <Content Include="Forms\IconosVeterinaria\Pets&amp;Vets.png" />
+    <Content Include="Forms\IconosVeterinaria\Puzzled.png" />
+    <Content Include="Forms\IconosVeterinaria\SearchBtn.png" />
+    <Content Include="Forms\IconosVeterinaria\Siren.png" />
+    <None Include="Resources\Puzzled1.png" />
     <None Include="Resources\Logout Rounded Left1.png" />
     <None Include="Resources\Back1.png" />
     <None Include="Resources\Group 80.png" />

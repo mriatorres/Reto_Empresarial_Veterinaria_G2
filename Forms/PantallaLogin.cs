@@ -58,8 +58,8 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Veterinario
         private void LoadSampleUsers()
         {
             users.Add(new User("admin@example.com", "admin123", "admin"));
-            users.Add(new User("receptionist@example.com", "receptionist123", "receptionist"));
-            users.Add(new User("veterinary@example.com", "veterinary123", "veterinary"));
+            users.Add(new User("recepcionista@example.com", "recepcionista123", "recepcionista"));
+            users.Add(new User("veterinario@example.com", "veterinario123", "veterinario"));
         }
 
         private void DashboardVeterinario_Load(object sender, EventArgs e)
@@ -80,11 +80,12 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Veterinario
                 Form dashboardForm = null;
                 switch (matchedUser.Role.ToLower())
                 {
-                    case "receptionist":
+                    case "recepcionista":
                         dashboardForm = new DashboardRecepcion();
                         break;
-                    case "veterinary":
-                        dashboardForm = new PantallaLogin();
+
+                    case "veterinario":
+                        dashboardForm = new DashboardVeterinario();
                         break;
                     default:
                         MessageBox.Show("No se reconoce el rol del usuario.", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
