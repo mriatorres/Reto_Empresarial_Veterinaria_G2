@@ -58,6 +58,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormRecepcion\AgendarCitasyCirugias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormRecepcion\ConsultarDisponibilidadConsultorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\FormRecepcion\DashboardRecepcion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\ConfirmDialogLogout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormRecepcion\VerAgendaConsultorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormRecepcion\VerAgendaQuirofanos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormsVeterinario\DashboardVeterinario.cs">
