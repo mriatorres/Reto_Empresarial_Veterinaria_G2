@@ -32,16 +32,14 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Veterinario
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-            // Crear una instancia de login form
+            // Crear una instancia de regHistorialVac
             RegHistorialVacunacion regHistoVac = new RegHistorialVacunacion();
 
-
-
-            // Mostrar login form
+            // Mostrar regHistorialVac
             regHistoVac.Show();
 
-            // Cerrar DashboardVeterinario form
-            this.Close();
+            // Ocultar el formulario actual (DashboardVeterinario)
+            this.Hide();
 
         }
 

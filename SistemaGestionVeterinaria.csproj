@@ -84,11 +84,29 @@
     <Compile Include="Forms\FormRecepcion\VerAgendaQuirofanos.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\FormsVeterinario\CrearActHistorialMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsVeterinario\CrearActHistorialMedico.Designer.cs">
+      <DependentUpon>CrearActHistorialMedico.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormsVeterinario\DashboardVeterinario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormsVeterinario\DashboardVeterinario.Designer.cs">
       <DependentUpon>DashboardVeterinario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsVeterinario\FormBaseRec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsVeterinario\FormBaseRec.Designer.cs">
+      <DependentUpon>FormBaseRec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsVeterinario\RegHistorialVacunacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsVeterinario\RegHistorialVacunacion.Designer.cs">
+      <DependentUpon>RegHistorialVacunacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PantallaLogin.cs">
       <SubType>Form</SubType>
@@ -123,8 +141,17 @@
     <Compile Include="Modelos\Veterinario\PersonalVeterinario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FormsVeterinario\CrearActHistorialMedico.resx">
+      <DependentUpon>CrearActHistorialMedico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormsVeterinario\DashboardVeterinario.resx">
       <DependentUpon>DashboardVeterinario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsVeterinario\FormBaseRec.resx">
+      <DependentUpon>FormBaseRec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsVeterinario\RegHistorialVacunacion.resx">
+      <DependentUpon>RegHistorialVacunacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PantallaLogin.resx">
       <DependentUpon>PantallaLogin.cs</DependentUpon>
@@ -163,7 +190,7 @@
     <Content Include="Forms\IconosVeterinaria\DoctorIcon.png" />
     <Content Include="Forms\IconosVeterinaria\High Importance.png" />
     <Content Include="Forms\IconosVeterinaria\Location.png" />
-    <Content Include="Forms\IconosVeterinaria\Logo.png" />
+    <Content Include="Resources\Logo.png" />
     <Content Include="Forms\IconosVeterinaria\Logout Rounded Left.png" />
     <Content Include="Forms\IconosVeterinaria\PawIcon.png" />
     <Content Include="Forms\IconosVeterinaria\Pets&amp;Vets.png" />

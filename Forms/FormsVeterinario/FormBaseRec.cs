@@ -97,5 +97,10 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Veterinario
             footerLabel.Location = new Point(600, 560);
             this.Controls.Add(footerLabel);
         }
+
+        private void FormBaseRec_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
