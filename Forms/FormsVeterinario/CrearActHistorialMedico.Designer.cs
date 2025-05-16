@@ -1,6 +1,6 @@
 ﻿namespace SistemaGestionVeterinaria.Forms.FormsVeterinario
 {
-    partial class RegHistorialVacunacion
+    partial class CrearActHistorialMedico
     {
         /// <summary>
         /// Required designer variable.
@@ -28,23 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegHistorialVacunacion));
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.roundedPanel1 = new SistemaGestionVeterinaria.Forms.RoundedPanel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.ActualizarPesoBtn = new SistemaGestionVeterinaria.Forms.Forms_Veterinario.RoundedButton();
+            this.CrearhistorialBtn = new SistemaGestionVeterinaria.Forms.Forms_Veterinario.RoundedButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.roundedPanelColored1 = new SistemaGestionVeterinaria.Forms.RoundedPanelColored();
+            this.idMascotaTxt = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.registroHistorialBtn = new SistemaGestionVeterinaria.Forms.Forms_Veterinario.RoundedButton();
+            this.irahistorialBtn = new SistemaGestionVeterinaria.Forms.Forms_Veterinario.RoundedButton();
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,6 +57,8 @@
             this.panel4.SuspendLayout();
             this.roundedPanel1.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.roundedPanelColored1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,7 +85,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::SistemaGestionVeterinaria.Properties.Resources.Logo;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(129, 70);
@@ -107,21 +111,11 @@
             this.panel7.Size = new System.Drawing.Size(239, 72);
             this.panel7.TabIndex = 2;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 973);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1904, 68);
-            this.panel3.TabIndex = 8;
-            // 
             // panel8
             // 
             this.panel8.Controls.Add(this.pictureBox4);
             this.panel8.Controls.Add(this.pictureBox2);
-            this.panel8.Location = new System.Drawing.Point(0, 78);
+            this.panel8.Location = new System.Drawing.Point(2, 78);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1904, 44);
             this.panel8.TabIndex = 11;
@@ -135,7 +129,6 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 9;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox2
             // 
@@ -147,29 +140,37 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 973);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1904, 68);
+            this.panel3.TabIndex = 12;
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.label1);
-            this.panel4.Location = new System.Drawing.Point(1, 243);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Location = new System.Drawing.Point(2, 172);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1902, 65);
-            this.panel4.TabIndex = 13;
+            this.panel4.TabIndex = 14;
             // 
-            // label1
+            // label3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(87)))), ((int)(((byte)(91)))));
-            this.label1.Location = new System.Drawing.Point(665, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(557, 44);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Historial Médico y Vacunación";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(87)))), ((int)(((byte)(91)))));
+            this.label3.Location = new System.Drawing.Point(649, 10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(630, 44);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Crear / Actualizar Historial Médico";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // roundedPanel1
             // 
@@ -177,63 +178,95 @@
             this.roundedPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.roundedPanel1.BorderRadius = 20;
             this.roundedPanel1.Controls.Add(this.panel9);
+            this.roundedPanel1.Controls.Add(this.panel2);
             this.roundedPanel1.Controls.Add(this.panel5);
             this.roundedPanel1.ForeColor = System.Drawing.Color.White;
-            this.roundedPanel1.Location = new System.Drawing.Point(342, 385);
+            this.roundedPanel1.Location = new System.Drawing.Point(343, 314);
             this.roundedPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.roundedPanel1.ShadowOffset = 5;
             this.roundedPanel1.Size = new System.Drawing.Size(1219, 413);
-            this.roundedPanel1.TabIndex = 12;
+            this.roundedPanel1.TabIndex = 13;
             // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.Controls.Add(this.ActualizarPesoBtn);
-            this.panel9.Location = new System.Drawing.Point(3, 242);
+            this.panel9.Controls.Add(this.CrearhistorialBtn);
+            this.panel9.Location = new System.Drawing.Point(3, 254);
             this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1214, 102);
             this.panel9.TabIndex = 4;
             // 
-            // ActualizarPesoBtn
+            // CrearhistorialBtn
             // 
-            this.ActualizarPesoBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(124)))), ((int)(((byte)(116)))));
-            this.ActualizarPesoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ActualizarPesoBtn.Location = new System.Drawing.Point(313, 19);
-            this.ActualizarPesoBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.ActualizarPesoBtn.Name = "ActualizarPesoBtn";
-            this.ActualizarPesoBtn.Size = new System.Drawing.Size(621, 60);
-            this.ActualizarPesoBtn.TabIndex = 1;
-            this.ActualizarPesoBtn.Text = "Actualizar vacunas";
-            this.ActualizarPesoBtn.UseVisualStyleBackColor = false;
-            this.ActualizarPesoBtn.Click += new System.EventHandler(this.ActualizarPesoBtn_Click);
+            this.CrearhistorialBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(124)))), ((int)(((byte)(116)))));
+            this.CrearhistorialBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CrearhistorialBtn.Location = new System.Drawing.Point(313, 19);
+            this.CrearhistorialBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.CrearhistorialBtn.Name = "CrearhistorialBtn";
+            this.CrearhistorialBtn.Size = new System.Drawing.Size(621, 60);
+            this.CrearhistorialBtn.TabIndex = 1;
+            this.CrearhistorialBtn.Text = "Crear nuevo historial médico";
+            this.CrearhistorialBtn.UseVisualStyleBackColor = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.roundedPanelColored1);
+            this.panel2.Location = new System.Drawing.Point(3, 45);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1214, 80);
+            this.panel2.TabIndex = 2;
+            // 
+            // roundedPanelColored1
+            // 
+            this.roundedPanelColored1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(124)))), ((int)(((byte)(130)))));
+            this.roundedPanelColored1.BorderRadius = 20;
+            this.roundedPanelColored1.BorderThickness = 2;
+            this.roundedPanelColored1.Controls.Add(this.idMascotaTxt);
+            this.roundedPanelColored1.FillColor = System.Drawing.Color.White;
+            this.roundedPanelColored1.Location = new System.Drawing.Point(125, 12);
+            this.roundedPanelColored1.Name = "roundedPanelColored1";
+            this.roundedPanelColored1.Size = new System.Drawing.Size(965, 56);
+            this.roundedPanelColored1.TabIndex = 2;
+            // 
+            // idMascotaTxt
+            // 
+            this.idMascotaTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.idMascotaTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idMascotaTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(87)))), ((int)(((byte)(91)))));
+            this.idMascotaTxt.Location = new System.Drawing.Point(18, 18);
+            this.idMascotaTxt.Name = "idMascotaTxt";
+            this.idMascotaTxt.Size = new System.Drawing.Size(933, 22);
+            this.idMascotaTxt.TabIndex = 0;
+            this.idMascotaTxt.TextChanged += new System.EventHandler(this.emailTxt_TextChanged);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.registroHistorialBtn);
-            this.panel5.Location = new System.Drawing.Point(5, 74);
+            this.panel5.Controls.Add(this.irahistorialBtn);
+            this.panel5.Location = new System.Drawing.Point(3, 138);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1214, 102);
             this.panel5.TabIndex = 1;
             // 
-            // registroHistorialBtn
+            // irahistorialBtn
             // 
-            this.registroHistorialBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(124)))), ((int)(((byte)(116)))));
-            this.registroHistorialBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registroHistorialBtn.Location = new System.Drawing.Point(313, 19);
-            this.registroHistorialBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.registroHistorialBtn.Name = "registroHistorialBtn";
-            this.registroHistorialBtn.Size = new System.Drawing.Size(621, 60);
-            this.registroHistorialBtn.TabIndex = 1;
-            this.registroHistorialBtn.Text = "Crear / Actualizar historial médico";
-            this.registroHistorialBtn.UseVisualStyleBackColor = false;
-            this.registroHistorialBtn.Click += new System.EventHandler(this.registroHistorialBtn_Click);
+            this.irahistorialBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(124)))), ((int)(((byte)(116)))));
+            this.irahistorialBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.irahistorialBtn.Location = new System.Drawing.Point(313, 19);
+            this.irahistorialBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.irahistorialBtn.Name = "irahistorialBtn";
+            this.irahistorialBtn.Size = new System.Drawing.Size(621, 60);
+            this.irahistorialBtn.TabIndex = 1;
+            this.irahistorialBtn.Text = "Ir al historial médico";
+            this.irahistorialBtn.UseVisualStyleBackColor = false;
             // 
-            // RegHistorialVacunacion
+            // CrearActHistorialMedico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -242,12 +275,12 @@
             this.ControlBox = false;
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.roundedPanel1);
-            this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel6);
-            this.Name = "RegHistorialVacunacion";
-            this.Text = "RegHistorialVacunacion";
-            this.Load += new System.EventHandler(this.RegHistorialVacunacion_Load);
+            this.Name = "CrearActHistorialMedico";
+            this.Text = "CrearHistorialMedico";
+            this.Load += new System.EventHandler(this.CrearActHistorialMedico_Load);
             this.panel6.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -259,6 +292,9 @@
             this.panel4.PerformLayout();
             this.roundedPanel1.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.roundedPanelColored1.ResumeLayout(false);
+            this.roundedPanelColored1.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -271,16 +307,19 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel3;
         private RoundedPanel roundedPanel1;
         private System.Windows.Forms.Panel panel9;
-        private Forms_Veterinario.RoundedButton ActualizarPesoBtn;
+        private Forms_Veterinario.RoundedButton CrearhistorialBtn;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel5;
-        private Forms_Veterinario.RoundedButton registroHistorialBtn;
+        private Forms_Veterinario.RoundedButton irahistorialBtn;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label3;
+        private RoundedPanelColored roundedPanelColored1;
+        private System.Windows.Forms.TextBox idMascotaTxt;
     }
 }
