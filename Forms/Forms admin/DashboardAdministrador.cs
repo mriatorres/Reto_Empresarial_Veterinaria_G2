@@ -16,5 +16,18 @@ namespace SistemaGestionVeterinaria.Forms.Forms_admin
         {
             InitializeComponent();
         }
+
+        private void btnCalcularIngresos_Click(object sender, EventArgs e)
+        {
+            CalculoIngresos calculoIngresos = new CalculoIngresos();
+            calculoIngresos.ShowDialog();
+
+        }
+
+        private void btnGenerarReportesActividad_Click(object sender, EventArgs e)
+        {
+            GenerarReportes generarReportes = new GenerarReportes();
+            generarReportes.ShowDialog();
+        }
     }
 }

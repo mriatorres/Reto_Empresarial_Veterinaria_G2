@@ -100,6 +100,7 @@
             this.btnReporteClientesActivos.TabIndex = 2;
             this.btnReporteClientesActivos.Text = "Clientes más activos";
             this.btnReporteClientesActivos.UseVisualStyleBackColor = false;
+            this.btnReporteClientesActivos.Click += new System.EventHandler(this.btnReporteClientesActivos_Click);
             // 
             // btnReporteFrecuencia
             // 
@@ -114,6 +115,7 @@
             this.btnReporteFrecuencia.TabIndex = 1;
             this.btnReporteFrecuencia.Text = "Frecuencia de enfermedades por especie";
             this.btnReporteFrecuencia.UseVisualStyleBackColor = false;
+            this.btnReporteFrecuencia.Click += new System.EventHandler(this.btnReporteFrecuencia_Click);
             // 
             // btnReporteEspacios
             // 
@@ -128,6 +130,7 @@
             this.btnReporteEspacios.TabIndex = 0;
             this.btnReporteEspacios.Text = "Uso de espacios";
             this.btnReporteEspacios.UseVisualStyleBackColor = false;
+            this.btnReporteEspacios.Click += new System.EventHandler(this.btnReporteEspacios_Click);
             // 
             // lblCopyright
             // 

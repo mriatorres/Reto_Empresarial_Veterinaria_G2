@@ -16,5 +16,23 @@ namespace SistemaGestionVeterinaria.Forms.Forms_admin
         {
             InitializeComponent();
         }
+
+        private void btnReporteEspacios_Click(object sender, EventArgs e)
+        {
+            ReporteUsoEspacios reporteUsoEspacios = new ReporteUsoEspacios();
+            reporteUsoEspacios.ShowDialog();
+        }
+
+        private void btnReporteFrecuencia_Click(object sender, EventArgs e)
+        {
+            reporteFrecuenciaEnfermedades reportefrecuenciaenfermedades = new reporteFrecuenciaEnfermedades();
+            reportefrecuenciaenfermedades.ShowDialog();
+        }
+
+        private void btnReporteClientesActivos_Click(object sender, EventArgs e)
+        {
+            reporteClientes reporteclientes = new reporteClientes();
+            reporteclientes.ShowDialog();
+        }
     }
 }

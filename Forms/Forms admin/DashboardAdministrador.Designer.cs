@@ -100,6 +100,7 @@
             this.btnGenerarReportesActividad.TabIndex = 2;
             this.btnGenerarReportesActividad.Text = "Generar reportes de actividad";
             this.btnGenerarReportesActividad.UseVisualStyleBackColor = false;
+            this.btnGenerarReportesActividad.Click += new System.EventHandler(this.btnGenerarReportesActividad_Click);
             // 
             // btnCalcularIngresos
             // 
@@ -114,6 +115,7 @@
             this.btnCalcularIngresos.TabIndex = 1;
             this.btnCalcularIngresos.Text = "Calcular ingresos";
             this.btnCalcularIngresos.UseVisualStyleBackColor = false;
+            this.btnCalcularIngresos.Click += new System.EventHandler(this.btnCalcularIngresos_Click);
             // 
             // lblPreguntaDashboard
             // 
