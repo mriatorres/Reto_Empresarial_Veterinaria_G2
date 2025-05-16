@@ -21,5 +21,10 @@ namespace SistemaGestionVeterinaria.Forms.Forms_admin
         {
 
         }
+
+        private void cmbPeriodo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

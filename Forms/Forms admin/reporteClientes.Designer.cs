@@ -96,9 +96,8 @@
             this.lblInfoClienteActivo.Name = "lblInfoClienteActivo";
             this.lblInfoClienteActivo.Size = new System.Drawing.Size(638, 110);
             this.lblInfoClienteActivo.TabIndex = 0;
-            this.lblInfoClienteActivo.Text = "Información del cliente más activo ";
+            this.lblInfoClienteActivo.Text = "Cargando información del cliente más activo...";
             this.lblInfoClienteActivo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblInfoClienteActivo.Click += new System.EventHandler(this.lblInfoClienteActivo_Click);
             // 
             // lblCopyright
             // 
@@ -106,7 +105,7 @@
             this.lblCopyright.AutoSize = true;
             this.lblCopyright.BackColor = System.Drawing.Color.Transparent;
             this.lblCopyright.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.lblCopyright.Location = new System.Drawing.Point(738, 315);
+            this.lblCopyright.Location = new System.Drawing.Point(738, 435);
             this.lblCopyright.Name = "lblCopyright";
             this.lblCopyright.Size = new System.Drawing.Size(46, 16);
             this.lblCopyright.TabIndex = 5;
@@ -126,23 +125,22 @@
             // 
             // cmbPeriodo
             // 
+            this.cmbPeriodo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPeriodo.FormattingEnabled = true;
             this.cmbPeriodo.Items.AddRange(new object[] {
-            "Histórico",
-            "Mes Actual",
-            "Último Mes"});
+            "Histórico"});
             this.cmbPeriodo.Location = new System.Drawing.Point(370, 105);
             this.cmbPeriodo.Name = "cmbPeriodo";
             this.cmbPeriodo.Size = new System.Drawing.Size(121, 24);
             this.cmbPeriodo.TabIndex = 7;
-            this.cmbPeriodo.Text = "Histórico";
+            this.cmbPeriodo.SelectedIndexChanged += new System.EventHandler(this.cmbPeriodo_SelectedIndexChanged);
             // 
             // reporteClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(245)))));
-            this.ClientSize = new System.Drawing.Size(800, 350);
+            this.ClientSize = new System.Drawing.Size(800, 470);
             this.Controls.Add(this.cmbPeriodo);
             this.Controls.Add(this.lblPeriodo);
             this.Controls.Add(this.lblCopyright);
@@ -170,6 +168,6 @@
         private System.Windows.Forms.Label lblCopyright;
         private System.Windows.Forms.Label lblPeriodo;
         private System.Windows.Forms.ComboBox cmbPeriodo;
-        private System.Windows.Forms.Label lblInfoClienteActivo; // Único label para mostrar el resultado
+        private System.Windows.Forms.Label lblInfoClienteActivo;
     }
 }
