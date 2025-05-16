@@ -46,7 +46,7 @@
             this.lblNombreSistema.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(153)))));
             this.lblNombreSistema.Location = new System.Drawing.Point(80, 38);
             this.lblNombreSistema.Name = "lblNombreSistema";
-            this.lblNombreSistema.Size = new System.Drawing.Size(126, 23); // Ajustado de 132 a 126 si el texto es "Sistema Gestión"
+            this.lblNombreSistema.Size = new System.Drawing.Size(132, 23);
             this.lblNombreSistema.TabIndex = 1;
             this.lblNombreSistema.Text = "Sistema Gestión";
             // 
@@ -63,12 +63,12 @@
             // 
             // lblPanelAdminTitulo
             // 
-            this.lblPanelAdminTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.lblPanelAdminTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPanelAdminTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblPanelAdminTitulo.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
             this.lblPanelAdminTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblPanelAdminTitulo.Location = new System.Drawing.Point(12, 90);
+            this.lblPanelAdminTitulo.Location = new System.Drawing.Point(8, 89);
             this.lblPanelAdminTitulo.Name = "lblPanelAdminTitulo";
             this.lblPanelAdminTitulo.Size = new System.Drawing.Size(776, 31);
             this.lblPanelAdminTitulo.TabIndex = 3;
@@ -96,11 +96,10 @@
             this.btnGenerarReportesActividad.ForeColor = System.Drawing.Color.White;
             this.btnGenerarReportesActividad.Location = new System.Drawing.Point(125, 145);
             this.btnGenerarReportesActividad.Name = "btnGenerarReportesActividad";
-            this.btnGenerarReportesActividad.Size = new System.Drawing.Size(250, 45); // El diseño de la imagen muestra el botón de abajo más alto
+            this.btnGenerarReportesActividad.Size = new System.Drawing.Size(250, 45);
             this.btnGenerarReportesActividad.TabIndex = 2;
             this.btnGenerarReportesActividad.Text = "Generar reportes de actividad";
             this.btnGenerarReportesActividad.UseVisualStyleBackColor = false;
-            // this.btnGenerarReportesActividad.Click += new System.EventHandler(this.btnGenerarReportesActividad_Click); // Descomenta para añadir evento
             // 
             // btnCalcularIngresos
             // 
@@ -115,11 +114,10 @@
             this.btnCalcularIngresos.TabIndex = 1;
             this.btnCalcularIngresos.Text = "Calcular ingresos";
             this.btnCalcularIngresos.UseVisualStyleBackColor = false;
-            // this.btnCalcularIngresos.Click += new System.EventHandler(this.btnCalcularIngresos_Click); // Descomenta para añadir evento
             // 
             // lblPreguntaDashboard
             // 
-            this.lblPreguntaDashboard.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.lblPreguntaDashboard.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPreguntaDashboard.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.lblPreguntaDashboard.ForeColor = System.Drawing.Color.Teal;
@@ -138,7 +136,7 @@
             this.lblCopyright.ForeColor = System.Drawing.SystemColors.GrayText;
             this.lblCopyright.Location = new System.Drawing.Point(738, 435);
             this.lblCopyright.Name = "lblCopyright";
-            this.lblCopyright.Size = new System.Drawing.Size(50, 16); // Ajustado de 46 a 50 por el texto © 2025
+            this.lblCopyright.Size = new System.Drawing.Size(46, 16);
             this.lblCopyright.TabIndex = 5;
             this.lblCopyright.Text = "© 2025";
             // 
@@ -157,12 +155,12 @@
             this.Name = "DashboardAdministrador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard Administrador";
-            // this.Load += new System.EventHandler(this.DashboardAdministrador_Load); // Descomenta si tienes un evento Load
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRefrescar)).EndInit();
             this.pnlContenidoPrincipal.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         private System.Windows.Forms.PictureBox pbLogo;
