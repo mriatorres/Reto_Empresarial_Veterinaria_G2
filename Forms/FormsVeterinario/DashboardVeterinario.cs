@@ -41,7 +41,7 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Veterinario
             regHistoVac.Show();
 
             // Cerrar DashboardVeterinario form
-            this.Close();
+            this.Hide();
 
         }
 
@@ -67,7 +67,7 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Veterinario
 
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        /*private void pictureBox4_Click(object sender, EventArgs e)
         {
             // Crear una instancia de login form
             PantallaLogin loginForm = new PantallaLogin();
@@ -78,6 +78,6 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Veterinario
             // Cerrar DashboardVeterinario form
             this.Close();
 
-        }
+        }*/
     }
 }
