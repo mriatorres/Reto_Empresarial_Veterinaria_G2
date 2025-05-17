@@ -65,11 +65,6 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Recepcion
                 textBox.Font = new Font("Inter", 12);
                 textBox.BorderStyle = BorderStyle.FixedSingle;
 
-                if (i == 1) textBox.Text = "";
-                if (i == 2) textBox.Text = "";
-                if (i == 3) textBox.Text = "";
-                if (i == 4) textBox.Text = "";
-
                 textBoxes[i] = textBox;
                 contentPanel.Controls.Add(textBox);
 
@@ -115,9 +110,11 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Recepcion
                 Direccion = textBoxes[3].Text,
                 Telefono = textBoxes[4].Text
             };
-            // Add the new Acudiente to the global repository
-            SistemaGestionVeterinaria.Data.DataRepository.Acudientes.Add(nuevoAcudiente);
-            // Open the RegistrarMascota form and pass the new Acudiente
+
+            // Agregar el nuevo acudiente a la lista local
+            listaAcudientes.Add(nuevoAcudiente);
+
+            // Abrir el formulario RegistrarMascota y pasar el nuevo acudiente
             RegistrarMascota registrarMascotaForm = new RegistrarMascota(nuevoAcudiente);
             registrarMascotaForm.ShowDialog();
         }

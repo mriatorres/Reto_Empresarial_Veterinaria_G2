@@ -19,7 +19,6 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Recepcion
 
     public class RegistrarMascota : FormBaseRec
     {
-       
         // Lista para almacenar los datos de las mascotas
         private List<Mascota> listaMascotas = new List<Mascota>();
         // Campos de texto y combobox
@@ -30,7 +29,6 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Recepcion
 
         public RegistrarMascota(Acudiente acudiente) : base("Veterinaria La Mascota")
         {
-
             // Guardar info acudiente
             this.acudiente = acudiente;
 
@@ -87,11 +85,6 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Recepcion
                     textBox.Font = new Font("Inter", 12);
                     textBox.BorderStyle = BorderStyle.FixedSingle;
 
-                    if (i == 1) textBox.Text = "DD/MM/AA";
-                    if (i == 2) textBox.Text = "Especie y/o raza";
-                    if (i == 4) textBox.Text = "Breve descripción ingreso";
-                    if (i == 5) textBox.Text = "ID único de la mascota";
-
                     textBoxes[i] = textBox;
                     contentPanel.Controls.Add(textBox);
                 }
@@ -138,11 +131,13 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Recepcion
                 Sexo = cbSexo.SelectedItem?.ToString() ?? "No especificado",
                 MotivoIngreso = textBoxes[4].Text,
                 IdMascota = textBoxes[5].Text,
-                AcudienteDocumento = acudiente?.Documento // Use the acudiente's Documento property
+                AcudienteDocumento = acudiente?.Documento
             };
-            // Add the new Mascota to the global repository
-            SistemaGestionVeterinaria.Data.DataRepository.Mascotas.Add(nuevaMascota);
-            // Optionally, you can show a message or open another form here
+
+            // Añadir la nueva mascota a la lista local
+            listaMascotas.Add(nuevaMascota);
+
+            // Mostrar mensaje de éxito
             MessageBox.Show("Mascota registrada correctamente.", "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             // Mostrar el formulario emergente con el ID de la mascota
@@ -153,12 +148,11 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Recepcion
             // Limpiar los campos después del registro
             foreach (var textBox in textBoxes)
             {
-                if (textBox != null) // Verificar que el TextBox no sea nulo
+                if (textBox != null)
                     textBox.Clear();
             }
             cbSexo.SelectedIndex = -1;
-
-
         }
     }
 }
+
