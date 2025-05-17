@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegHistorialVacunacion));
+=======
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -44,7 +47,11 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.ActualizarPesoBtn = new SistemaGestionVeterinaria.Forms.Forms_Veterinario.RoundedButton();
             this.panel5 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             this.registroHistorialBtn = new SistemaGestionVeterinaria.Forms.Forms_Veterinario.RoundedButton();
+=======
+            this.CrearActHistorialBtn = new SistemaGestionVeterinaria.Forms.Forms_Veterinario.RoundedButton();
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -81,7 +88,11 @@
             // 
             // pictureBox1
             // 
+<<<<<<< HEAD
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+=======
+            this.pictureBox1.Image = global::SistemaGestionVeterinaria.Properties.Resources.Logo;
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(129, 70);
@@ -213,13 +224,18 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.panel5.Controls.Add(this.registroHistorialBtn);
+=======
+            this.panel5.Controls.Add(this.CrearActHistorialBtn);
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
             this.panel5.Location = new System.Drawing.Point(5, 74);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1214, 102);
             this.panel5.TabIndex = 1;
             // 
+<<<<<<< HEAD
             // registroHistorialBtn
             // 
             this.registroHistorialBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(124)))), ((int)(((byte)(116)))));
@@ -232,6 +248,20 @@
             this.registroHistorialBtn.Text = "Crear / Actualizar historial médico";
             this.registroHistorialBtn.UseVisualStyleBackColor = false;
             this.registroHistorialBtn.Click += new System.EventHandler(this.registroHistorialBtn_Click);
+=======
+            // CrearActHistorialBtn
+            // 
+            this.CrearActHistorialBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(124)))), ((int)(((byte)(116)))));
+            this.CrearActHistorialBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CrearActHistorialBtn.Location = new System.Drawing.Point(313, 19);
+            this.CrearActHistorialBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.CrearActHistorialBtn.Name = "CrearActHistorialBtn";
+            this.CrearActHistorialBtn.Size = new System.Drawing.Size(621, 60);
+            this.CrearActHistorialBtn.TabIndex = 1;
+            this.CrearActHistorialBtn.Text = "Crear / Actualizar historial médico";
+            this.CrearActHistorialBtn.UseVisualStyleBackColor = false;
+            this.CrearActHistorialBtn.Click += new System.EventHandler(this.CrearActHistorialBtn_Click);
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
             // 
             // RegHistorialVacunacion
             // 
@@ -281,6 +311,10 @@
         private System.Windows.Forms.Panel panel9;
         private Forms_Veterinario.RoundedButton ActualizarPesoBtn;
         private System.Windows.Forms.Panel panel5;
+<<<<<<< HEAD
         private Forms_Veterinario.RoundedButton registroHistorialBtn;
+=======
+        private Forms_Veterinario.RoundedButton CrearActHistorialBtn;
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
     }
 }

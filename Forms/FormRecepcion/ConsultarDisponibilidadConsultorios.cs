@@ -152,4 +152,8 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Recepcion
             return data;
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec

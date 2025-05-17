@@ -38,7 +38,11 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Veterinario
             // Mostrar regHistorialVac
             regHistoVac.Show();
 
+<<<<<<< HEAD
             // Ocultar el formulario actual (DashboardVeterinario)
+=======
+            // Cerrar DashboardVeterinario form
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
             this.Hide();
 
         }
@@ -65,7 +69,7 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Veterinario
 
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        /*private void pictureBox4_Click(object sender, EventArgs e)
         {
             // Crear una instancia de login form
             PantallaLogin loginForm = new PantallaLogin();
@@ -76,6 +80,6 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Veterinario
             // Cerrar DashboardVeterinario form
             this.Close();
 
-        }
+        }*/
     }
 }

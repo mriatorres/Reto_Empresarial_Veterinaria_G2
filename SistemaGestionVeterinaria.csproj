@@ -52,6 +52,7 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\DataRepository.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +65,12 @@
     <Compile Include="Forms\FormRecepcion\ConsultarDisponibilidadConsultorios.cs">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
+=======
+    <Compile Include="Forms\FormRecepcion\ConsultarDisponibilidadQuirofanos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
     <Compile Include="Forms\FormRecepcion\DashboardRecepcion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,18 +97,30 @@
     <Compile Include="Forms\FormsVeterinario\CrearActHistorialMedico.Designer.cs">
       <DependentUpon>CrearActHistorialMedico.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+=======
+    <Compile Include="Forms\FormsVeterinario\ActualizarHistorialMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsVeterinario\ActualizarHistorialMedico.Designer.cs">
+      <DependentUpon>ActualizarHistorialMedico.cs</DependentUpon>
+    </Compile>
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
     <Compile Include="Forms\FormsVeterinario\DashboardVeterinario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormsVeterinario\DashboardVeterinario.Designer.cs">
       <DependentUpon>DashboardVeterinario.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Forms\FormsVeterinario\FormBaseRec.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormsVeterinario\FormBaseRec.Designer.cs">
       <DependentUpon>FormBaseRec.cs</DependentUpon>
     </Compile>
+=======
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
     <Compile Include="Forms\FormsVeterinario\RegHistorialVacunacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +151,7 @@
     <Compile Include="Forms\RoundedTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Data\MascotasRepository.cs" />
     <Compile Include="Modelos\Administrador\Administrador.cs" />
     <Compile Include="Modelos\Recepcion\Cliente.cs" />
     <Compile Include="Modelos\Recepcion\Mascota.cs" />
@@ -141,6 +161,7 @@
     <Compile Include="Modelos\Veterinario\PersonalVeterinario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <EmbeddedResource Include="Forms\FormsVeterinario\CrearActHistorialMedico.resx">
       <DependentUpon>CrearActHistorialMedico.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,6 +171,20 @@
     <EmbeddedResource Include="Forms\FormsVeterinario\FormBaseRec.resx">
       <DependentUpon>FormBaseRec.cs</DependentUpon>
     </EmbeddedResource>
+=======
+    <EmbeddedResource Include="Forms\FormRecepcion\RegistrarOtraMascota.resx">
+      <DependentUpon>RegistrarOtraMascota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsVeterinario\CrearActHistorialMedico.resx">
+      <DependentUpon>CrearActHistorialMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsVeterinario\ActualizarHistorialMedico.resx">
+      <DependentUpon>ActualizarHistorialMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsVeterinario\DashboardVeterinario.resx">
+      <DependentUpon>DashboardVeterinario.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
     <EmbeddedResource Include="Forms\FormsVeterinario\RegHistorialVacunacion.resx">
       <DependentUpon>RegHistorialVacunacion.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,6 +232,7 @@
     <Content Include="Forms\IconosVeterinaria\Puzzled.png" />
     <Content Include="Forms\IconosVeterinaria\SearchBtn.png" />
     <Content Include="Forms\IconosVeterinaria\Siren.png" />
+    <None Include="Resources\Logo.png" />
     <None Include="Resources\Puzzled1.png" />
     <None Include="Resources\Logout Rounded Left1.png" />
     <None Include="Resources\Back1.png" />

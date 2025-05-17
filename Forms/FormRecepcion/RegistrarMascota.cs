@@ -8,25 +8,32 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Recepcion
 {
     public class Mascota
     {
-        public string NombreMascota { get; set; }
-        public string FechaNacimiento { get; set; }
-        public string Especie { get; set; }
-        public string Sexo { get; set; }
-        public string MotivoIngreso { get; set; }
-        public string IdMascota { get; set; }
+        public string NombreMascota;
+        public string FechaNacimiento;
+        public string Especie;
+        public string Sexo;
+        public string MotivoIngreso;
+        public string IdMascota;
+        public string AcudienteDocumento;
     }
 
     public class RegistrarMascota : FormBaseRec
     {
+       
         // Lista para almacenar los datos de las mascotas
         private List<Mascota> listaMascotas = new List<Mascota>();
-
         // Campos de texto y combobox
         private TextBox[] textBoxes;
         private ComboBox cbSexo;
+        // Field to store the Acudiente information
+        private Acudiente acudiente;
 
-        public RegistrarMascota() : base("Veterinaria La Mascota")
+        public RegistrarMascota(Acudiente acudiente) : base("Veterinaria La Mascota")
         {
+
+            // Guardar info acudiente
+            this.acudiente = acudiente;
+
             // Título en la parte azul (parte superior del formulario)
             Label panelTitle = new Label();
             panelTitle.Text = "Registrar datos de la mascota";
@@ -123,7 +130,6 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Recepcion
         // Método para guardar los datos ingresados
         private void GuardarDatos()
         {
-            // Crear un objeto mascota con los datos ingresados
             Mascota nuevaMascota = new Mascota
             {
                 NombreMascota = textBoxes[0].Text,
@@ -131,11 +137,13 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Recepcion
                 Especie = textBoxes[2].Text,
                 Sexo = cbSexo.SelectedItem?.ToString() ?? "No especificado",
                 MotivoIngreso = textBoxes[4].Text,
-                IdMascota = textBoxes[5].Text
+                IdMascota = textBoxes[5].Text,
+                AcudienteDocumento = acudiente?.Documento // Use the acudiente's Documento property
             };
-
-            // Agregar el objeto a la lista
-            listaMascotas.Add(nuevaMascota);
+            // Add the new Mascota to the global repository
+            SistemaGestionVeterinaria.Data.DataRepository.Mascotas.Add(nuevaMascota);
+            // Optionally, you can show a message or open another form here
+            MessageBox.Show("Mascota registrada correctamente.", "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             // Mostrar el formulario emergente con el ID de la mascota
             string idRegistrado = nuevaMascota.IdMascota;
@@ -149,6 +157,7 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Recepcion
                     textBox.Clear();
             }
             cbSexo.SelectedIndex = -1;
+
 
         }
     }

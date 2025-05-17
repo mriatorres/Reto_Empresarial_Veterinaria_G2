@@ -49,4 +49,8 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Recepcion
             btnConsultarDisponibilidad.Click += (s, e) => MessageBox.Show("Disponibilidad de quirófanos verificada.", "Consulta Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec

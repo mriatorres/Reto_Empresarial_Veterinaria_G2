@@ -65,10 +65,10 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Recepcion
                 textBox.Font = new Font("Inter", 12);
                 textBox.BorderStyle = BorderStyle.FixedSingle;
 
-                if (i == 1) textBox.Text = "C.C";
-                if (i == 2) textBox.Text = "Email";
-                if (i == 3) textBox.Text = "Dirección";
-                if (i == 4) textBox.Text = "+57";
+                if (i == 1) textBox.Text = "";
+                if (i == 2) textBox.Text = "";
+                if (i == 3) textBox.Text = "";
+                if (i == 4) textBox.Text = "";
 
                 textBoxes[i] = textBox;
                 contentPanel.Controls.Add(textBox);
@@ -107,7 +107,6 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Recepcion
         // Método para guardar los datos ingresados
         private void GuardarDatos()
         {
-            // Crear un objeto acudiente con los datos ingresados
             Acudiente nuevoAcudiente = new Acudiente
             {
                 Nombre = textBoxes[0].Text,
@@ -116,15 +115,10 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Recepcion
                 Direccion = textBoxes[3].Text,
                 Telefono = textBoxes[4].Text
             };
-
-            // Agregar el objeto a la lista
-            listaAcudientes.Add(nuevoAcudiente);
-
-            // Mostrar mensaje de éxito
-            MessageBox.Show("Datos del acudiente registrados correctamente.", "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            // Abrir el formulario RegistrarMascota
-            RegistrarMascota registrarMascotaForm = new RegistrarMascota();
+            // Add the new Acudiente to the global repository
+            SistemaGestionVeterinaria.Data.DataRepository.Acudientes.Add(nuevoAcudiente);
+            // Open the RegistrarMascota form and pass the new Acudiente
+            RegistrarMascota registrarMascotaForm = new RegistrarMascota(nuevoAcudiente);
             registrarMascotaForm.ShowDialog();
         }
     }

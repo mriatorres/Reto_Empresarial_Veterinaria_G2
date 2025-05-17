@@ -40,8 +40,11 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.roundedPanel1 = new SistemaGestionVeterinaria.Forms.RoundedPanel();
+<<<<<<< HEAD
             this.panel9 = new System.Windows.Forms.Panel();
             this.CrearhistorialBtn = new SistemaGestionVeterinaria.Forms.Forms_Veterinario.RoundedButton();
+=======
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
             this.panel2 = new System.Windows.Forms.Panel();
             this.roundedPanelColored1 = new SistemaGestionVeterinaria.Forms.RoundedPanelColored();
             this.idMascotaTxt = new System.Windows.Forms.TextBox();
@@ -56,7 +59,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
             this.roundedPanel1.SuspendLayout();
+<<<<<<< HEAD
             this.panel9.SuspendLayout();
+=======
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
             this.panel2.SuspendLayout();
             this.roundedPanelColored1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -85,7 +91,11 @@
             // 
             // pictureBox1
             // 
+<<<<<<< HEAD
             //this.pictureBox1.Image = global::SistemaGestionVeterinaria.Properties.Resources.Logo;
+=======
+            this.pictureBox1.Image = global::SistemaGestionVeterinaria.Properties.Resources.Logo;
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(129, 70);
@@ -129,6 +139,10 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 9;
             this.pictureBox4.TabStop = false;
+<<<<<<< HEAD
+=======
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
             // 
             // pictureBox2
             // 
@@ -140,6 +154,10 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
+<<<<<<< HEAD
+=======
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
             // 
             // panel3
             // 
@@ -167,9 +185,15 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(87)))), ((int)(((byte)(91)))));
             this.label3.Location = new System.Drawing.Point(649, 10);
             this.label3.Name = "label3";
+<<<<<<< HEAD
             this.label3.Size = new System.Drawing.Size(630, 44);
             this.label3.TabIndex = 2;
             this.label3.Text = "Crear / Actualizar Historial Médico";
+=======
+            this.label3.Size = new System.Drawing.Size(496, 44);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Actualizar Historial Médico";
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // roundedPanel1
@@ -177,7 +201,10 @@
             this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(245)))));
             this.roundedPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.roundedPanel1.BorderRadius = 20;
+<<<<<<< HEAD
             this.roundedPanel1.Controls.Add(this.panel9);
+=======
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
             this.roundedPanel1.Controls.Add(this.panel2);
             this.roundedPanel1.Controls.Add(this.panel5);
             this.roundedPanel1.ForeColor = System.Drawing.Color.White;
@@ -189,6 +216,7 @@
             this.roundedPanel1.Size = new System.Drawing.Size(1219, 413);
             this.roundedPanel1.TabIndex = 13;
             // 
+<<<<<<< HEAD
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.White;
@@ -211,11 +239,17 @@
             this.CrearhistorialBtn.Text = "Crear nuevo historial médico";
             this.CrearhistorialBtn.UseVisualStyleBackColor = false;
             // 
+=======
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.roundedPanelColored1);
+<<<<<<< HEAD
             this.panel2.Location = new System.Drawing.Point(3, 45);
+=======
+            this.panel2.Location = new System.Drawing.Point(2, 103);
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1214, 80);
@@ -248,7 +282,11 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.irahistorialBtn);
+<<<<<<< HEAD
             this.panel5.Location = new System.Drawing.Point(3, 138);
+=======
+            this.panel5.Location = new System.Drawing.Point(2, 207);
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1214, 102);
@@ -265,6 +303,10 @@
             this.irahistorialBtn.TabIndex = 1;
             this.irahistorialBtn.Text = "Ir al historial médico";
             this.irahistorialBtn.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
+=======
+            this.irahistorialBtn.Click += new System.EventHandler(this.irahistorialBtn_Click);
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
             // 
             // CrearActHistorialMedico
             // 
@@ -291,7 +333,10 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.roundedPanel1.ResumeLayout(false);
+<<<<<<< HEAD
             this.panel9.ResumeLayout(false);
+=======
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
             this.panel2.ResumeLayout(false);
             this.roundedPanelColored1.ResumeLayout(false);
             this.roundedPanelColored1.PerformLayout();
@@ -312,8 +357,11 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel3;
         private RoundedPanel roundedPanel1;
+<<<<<<< HEAD
         private System.Windows.Forms.Panel panel9;
         private Forms_Veterinario.RoundedButton CrearhistorialBtn;
+=======
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel5;
         private Forms_Veterinario.RoundedButton irahistorialBtn;

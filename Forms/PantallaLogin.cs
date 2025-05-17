@@ -131,12 +131,19 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Veterinario
 
         private void label4_Click(object sender, EventArgs e)
         {
-
+            
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
+            // Crear una instancia de pantallabienvenida
+            PantallaBienvenida pantallaBienvenida = new PantallaBienvenida();
 
+            // Mostrar pantallabienvenida
+            pantallaBienvenida.Show();
+
+            // Cerrar pantallabienvenida form
+            this.Close();
         }
     }
 }

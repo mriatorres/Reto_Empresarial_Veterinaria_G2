@@ -34,7 +34,11 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             this.label3 = new System.Windows.Forms.Label();
+=======
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
             this.roundedPanel1 = new SistemaGestionVeterinaria.Forms.RoundedPanel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.ActualizarPesoBtn = new SistemaGestionVeterinaria.Forms.Forms_Veterinario.RoundedButton();
@@ -50,6 +54,10 @@
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel8.SuspendLayout();
+<<<<<<< HEAD
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
             this.roundedPanel1.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -110,13 +118,13 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.pictureBox4);
             this.panel8.Controls.Add(this.pictureBox2);
             this.panel8.Location = new System.Drawing.Point(0, 79);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1904, 44);
             this.panel8.TabIndex = 10;
             // 
+<<<<<<< HEAD
             // label3
             // 
             this.label3.AutoSize = true;
@@ -128,6 +136,19 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Panel personal veterinario";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+=======
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::SistemaGestionVeterinaria.Properties.Resources.Logout_Rounded_Left;
+            this.pictureBox2.Location = new System.Drawing.Point(1864, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(38, 44);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
             // 
             // roundedPanel1
             // 
@@ -277,6 +298,10 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel8.ResumeLayout(false);
+<<<<<<< HEAD
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
             this.roundedPanel1.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -308,7 +333,10 @@
         private RoundedButton ActualizarPesoBtn;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.PictureBox pictureBox2;
+<<<<<<< HEAD
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label3;
+=======
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
     }
 }

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace SistemaGestionVeterinaria.Forms.FormRecepcion
 {
+<<<<<<< HEAD
     public partial class ConsultarDisponibilidadQuirofanos: Form
     {
         public ConsultarDisponibilidadQuirofanos()
@@ -18,3 +19,12 @@ namespace SistemaGestionVeterinaria.Forms.FormRecepcion
         }
     }
 }
+=======
+    public partial class ConsultarDisponibilidadQuirofanos : Form
+    {
+       public ConsultarDisponibilidadQuirofanos()
+        {
+        }
+    }
+}
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec

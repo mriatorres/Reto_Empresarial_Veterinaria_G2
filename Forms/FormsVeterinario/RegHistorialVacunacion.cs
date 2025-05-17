@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace SistemaGestionVeterinaria.Forms.FormsVeterinario
 {
-    public partial class RegHistorialVacunacion: Form
+    public partial class RegHistorialVacunacion : Form
     {
         public RegHistorialVacunacion()
         {
@@ -61,6 +61,7 @@ namespace SistemaGestionVeterinaria.Forms.FormsVeterinario
 
         }
 
+<<<<<<< HEAD
         private void registroHistorialBtn_Click(object sender, EventArgs e)
         {
             // Crear una instancia de crearActhistorialmedico
@@ -72,5 +73,21 @@ namespace SistemaGestionVeterinaria.Forms.FormsVeterinario
             // Cerrar RegHistorialVacunacion form
             this.Close();
         }
+=======
+
+        private void CrearActHistorialBtn_Click(object sender, EventArgs e)
+        {
+             
+            // Crear una instancia de crearActhistorialmedico
+            CrearActHistorialMedico crearActhistorialmed = new CrearActHistorialMedico();
+
+            // Mostrar crearActhistorialmedico
+            crearActhistorialmed.Show();
+
+            // Cerrar RegHistorialVacunacion form
+            this.Hide();
+        
+    }
+>>>>>>> c1b130b3a22383bb3ed03181cf86479fc4ef85ec
     }
 }
