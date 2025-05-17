@@ -39,6 +39,12 @@ namespace SistemaGestionVeterinaria.Forms.Forms_Recepcion
 
             // Botón para agendar citas y cirugías
             Button btnAgendar = CreateHoverButton("Agendar citas y cirugías", 190);
+            // Evento para abrir el formulario AgendarCitayCirugia
+            btnAgendar.Click += (s, e) =>
+            {
+                AgendarCitasyCirugias agendarCitasyCirugias = new AgendarCitasyCirugias();
+                agendarCitasyCirugias.ShowDialog();
+            };
             contentPanel.Controls.Add(btnAgendar);
         }
 
